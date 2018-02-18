@@ -1,13 +1,14 @@
-# SITE CONFIGURATION
+email : krnomad@gmail.com
 baseurl: ""
 url: "https://jwkang.github.io/"
+timezone: Asia/Seoul 
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
   title: Krnomad's Tech note
-  avatar: #assets/img/avatar.png
-  favicon: #assets/favicon.ico
+  avatar: assets/img/avatar.jpg
+  favicon: assets/favicon.ico
   gravatar: # Email MD5 hash
   description: "docker c++ python jenkins crwaling android java c" # used by search engines - Short description, primarily used by search engines
 
@@ -16,11 +17,11 @@ theme_settings:
      <p>블로그 공사 중 입니다</p>
   header_text_feature_image:
   footer_text: >
-   This blog is made by <a href="https://jekyllrb-ko.github.io/">jekyll </a>
+   This blog is made by <a href="https://jekyllrb-ko.github.io/">jekyll</a>
 
   # Icons
   rss: true
-  email_address: krnomad@gmail.com # Full email address, e.g. "sam@example.com"
+  email_address: krnomad@gmail.com 
   behance:
   bitbucket:
   dribbble:
