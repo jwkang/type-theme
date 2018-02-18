@@ -1,10 +1,16 @@
 ---
 layout: default
 ---
-<article {% if page.feature-img %}class="feature-image"{% endif %}>
-  <header style="background-image: url('{{ site.baseurl }}/{{ page.feature-img }}')">
-    <h1 class="title">{{ page.title }}</h1>
-    {% if page.subtitle %}<h2 class="subtitle">{{ page.subtitle }}</h2>{% endif %}
-  </header>
-  <section class="post-content">{{ content }}</section>
-</article>
+<div id="cover" class="container-fluid"
+     {% if page.image %}style="background-image: url({{ page.image }});"{% endif %}>
+    <div>
+        <h1>{{ page.title }}</h1>
+        <p>{{ page.description | newline_to_br }}</p>
+    </div>
+</div>
+
+<div id="content" class="container">
+    <div id="post-content" class="post page" role="main">
+        {{ content }}
+    </div>
+</div>
